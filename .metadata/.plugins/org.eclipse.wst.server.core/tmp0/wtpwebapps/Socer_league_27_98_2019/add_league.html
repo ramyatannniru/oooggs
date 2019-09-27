@@ -1,0 +1,36 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>add league</h1>
+<form name="add_league" id="form-1" method="post" action="add_league.do">
+	<label for="input-1">title</label>
+	<input id="input-1" name="title" placeholder="title" type="text"/>
+	
+<label for="input-3">year</label>
+		<input id="input-3" name="year" placeholder="year" type="text"/>
+		<select name="season">
+		<option value="Unknown">unknown</option>
+  <option value="summer">summer</option>
+  <option value="winter">winter</option>
+  <option value="rainy">rainy</option>
+  <option value="autm">autm</option>
+</select>
+	<input type="submit" value="getview" id="button-1" formmethod="post"/>
+</form>
+<br>
+
+<form name="welcome" id="form-2" action="add_league.view" method="post">
+<label for="input-1">title</label>
+	<input id="input-1" name="title" placeholder="title" type="text"/>
+	<input type="submit" value="welcome" id="button-2"  />
+</form>
+
+</body>
+</html>

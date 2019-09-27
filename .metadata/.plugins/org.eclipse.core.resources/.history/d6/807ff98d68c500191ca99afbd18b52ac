@@ -1,0 +1,9 @@
+package com.network;
+
+public class NetworkingServer {
+
+	public NetworkingServer() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

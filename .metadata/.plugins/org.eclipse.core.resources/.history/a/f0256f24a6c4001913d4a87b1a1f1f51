@@ -1,0 +1,79 @@
+package io.com.example;
+import java.io.*;
+
+public class Sampleencryption {
+void encrypt(String source, String destination,int shift)
+{
+	BufferedReader reader;
+	BufferedWriter writer = null;
+	int data;
+	try {
+		reader=new BufferedReader(new FileReader(source));
+		String l=reader.readLine();
+		while(l!=null)
+		{
+			for(int i=0;i<l.length();i++)
+			{
+				data=(int) l.charAt(i)+shift;
+				int count=vowels(source);
+				writer.write(data);
+				writer.write(count);
+			}
+			writer.write((int) '\n');
+			l=reader.readLine();
+		}
+		reader.close();
+		writer.close();
+	}
+	catch(Exception e)
+	{
+		System.out.println("file not fount");
+	}
+}
+	public void ViewFileContent(String filename)
+	{
+		BufferedReader reader;
+		try{
+			reader=new BufferedReader(new FileReader(filename));
+			String l=reader.readLine();
+			while(l!=null)
+			{
+				System.out.println(l);
+				l=reader.readLine();
+			}
+			reader.close();
+		}
+		catch(Exception e)
+		{
+			System.out.println("file not found");
+		}
+	}
+	public int vowels(String filename)
+	{
+		BufferedReader reader;
+		BufferedWriter writer = null;
+		int data = 0;
+		try {
+			reader=new BufferedReader(new FileReader(filename));
+			String l=reader.readLine();
+			while(l!=null)
+			{
+				for(int i=0;i<l.length();i++)
+				{
+					if(i=='a'||i=='e'||i=='o'||i=='i'||i=='u')
+					{
+						data++;
+					}
+	}
+	
+				
+		}
+		}
+		catch(Exception e)
+		{
+}
+		return data;
+	}
+}
+	
+
